@@ -1,15 +1,16 @@
 public class GameNumber {
     public String of(int i) {
-        if (isDividedBy(i, 3) && isDividedBy(i, 5)) {
-            return "FizzBuzz";
-        }
+        StringBuilder sb=new StringBuilder();
         if (isDividedBy(i, 3)) {
-            return "Fizz";
+            sb.append("Fizz");
         }
         if (isDividedBy(i, 5)) {
-            return "Buzz";
+            sb.append("Buzz");
         }
-        return String.valueOf(i);
+        if(sb.length()==0){
+            return String.valueOf(i);
+        }
+        return sb.toString();
 
     }
 
