@@ -1,13 +1,13 @@
 public class GameNumber {
     public String of(int i) {
-        StringBuilder sb=new StringBuilder();
+        StringBuilder sb = new StringBuilder();
         if (isDividedBy(i, 3)) {
             sb.append("Fizz");
         }
         if (isDividedBy(i, 5)) {
             sb.append("Buzz");
         }
-        if(sb.length()==0){
+        if (sb.length() == 0) {
             return String.valueOf(i);
         }
         return sb.toString();
